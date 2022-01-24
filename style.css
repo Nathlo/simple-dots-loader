@@ -30,4 +30,27 @@ section {
   margin: 0 5px;
   display: inline-block;
   border-radius: 50px;
+  animation: dotLoaders 0.9s infinite linear forwards;
+}
+
+.container .dot-1 {
+  animation-delay: 0.25s;
+}
+.container .dot-2 {
+  animation-delay: 0.5s;
+}
+.container .dot-3 {
+  animation-delay: 0.75s;
+}
+
+@keyframes dotLoaders {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
