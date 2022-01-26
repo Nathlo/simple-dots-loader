@@ -30,16 +30,23 @@ section {
   margin: 0 5px;
   display: inline-block;
   border-radius: 50px;
+}
+
+.container:nth-child(1) .dot {
   animation: dotLoaders 0.9s infinite linear forwards;
 }
 
-.container .dot-1 {
+.container:nth-child(2) .dot {
+  animation: dotLoaders2 1.5s infinite linear forwards;
+}
+
+.container .dot.dot-1 {
   animation-delay: 0.25s;
 }
-.container .dot-2 {
+.container .dot.dot-2 {
   animation-delay: 0.5s;
 }
-.container .dot-3 {
+.container .dot.dot-3 {
   animation-delay: 0.75s;
 }
 
@@ -52,5 +59,20 @@ section {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes dotLoaders2 {
+  0% {
+    background-color: rgba(255, 255, 255, 0.137);
+    transform: scale(0.8);
+  }
+  50% {
+    background-color: white;
+    transform: scale(1.5);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.137);
+    transform: scale(0.8);
   }
 }
