@@ -14,30 +14,43 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.title {
+  color: salmon;
+  position: absolute;
+  top: 100px;
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 50px;
   width: 400px;
-  height: 200px;
+  height: 400px;
   background-color: salmon;
+  border-radius: 10px;
 }
 
 .container .dot {
-  height: 12px;
-  width: 12px;
+  height: 24px;
+  width: 24px;
   background-color: whitesmoke;
-  margin: 0 5px;
+  margin: 0 8px;
   display: inline-block;
   border-radius: 50px;
 }
 
 .container:nth-child(1) .dot {
-  animation: dotLoaders 0.9s infinite linear forwards;
+  animation: dotLoaders 0.9s linear infinite forwards;
 }
 
 .container:nth-child(2) .dot {
-  animation: dotLoaders2 1.5s infinite linear forwards;
+  animation: dotLoaders2 1.5s linear infinite forwards;
 }
 
 .container .dot.dot-1 {
@@ -49,7 +62,7 @@ section {
 .container .dot.dot-3 {
   animation-delay: 0.75s;
 }
-
+/* jumping animation */
 @keyframes dotLoaders {
   0% {
     transform: translateY(0px);
@@ -61,7 +74,7 @@ section {
     transform: translateY(0px);
   }
 }
-
+/* fading-blinking animation */
 @keyframes dotLoaders2 {
   0% {
     background-color: rgba(255, 255, 255, 0.137);
