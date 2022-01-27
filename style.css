@@ -45,11 +45,11 @@ section {
   border-radius: 50px;
 }
 
-.container:nth-child(1) .dot {
+.container:nth-child(2) .dot {
   animation: dotLoaders 0.9s linear infinite forwards;
 }
 
-.container:nth-child(2) .dot {
+.container:nth-child(3) .dot {
   animation: dotLoaders2 1.5s linear infinite forwards;
 }
 
@@ -74,7 +74,7 @@ section {
     transform: translateY(0px);
   }
 }
-/* fading-blinking animation */
+/* growing-fading animation */
 @keyframes dotLoaders2 {
   0% {
     background-color: rgba(255, 255, 255, 0.137);
